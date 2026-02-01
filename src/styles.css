@@ -5,8 +5,6 @@ html {
 body {
   margin: 0;
   font-family: 'Syne', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
+  background-color: #0f0f1e;
+  color: white;
 }
