@@ -1,456 +1,158 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- Portfolio Container -->
-<div class="portfolio-container">
-  
-  <!-- Hero Section -->
-  <section class="hero-section" id="home">
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Shahd Mostafa</h1>
-        <h2 class="hero-title">Software Development Engineer</h2>
-        <p class="hero-tagline">"The only way to do great work is to love what you do."</p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="#projects" class="btn btn-outline">View Work</a>
+<!-- HERO -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6 text-center text-lg-start">
+        <p class="text-primary">Hello, I'm</p>
+        <h1 class="fw-bold display-4">Shahd Mostafa</h1>
+        <h4 class="text-secondary">Software Development Engineer</h4>
+        <p class="fst-italic text-muted">"The only way to do great work is to love what you do."</p>
+
+        <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+          <a href="#contact" class="btn btn-primary rounded-pill px-4">Get In Touch</a>
+          <a href="#projects" class="btn btn-outline-primary rounded-pill px-4">View Work</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="profile-image-container">
-          <img src="assets/Me.png" alt="Shahd Mostafa" class="profile-image">
-        </div>
-        <div class="animated-circle circle-1"></div>
-        <div class="animated-circle circle-2"></div>
-        <div class="animated-circle circle-3"></div>
+
+      <div class="col-lg-6 text-center mt-5 mt-lg-0">
+        <img src="assets/Me.png" class="profile-img" alt="Shahd">
       </div>
+
     </div>
-    <div class="scroll-indicator">
-      <span class="scroll-text">Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section class="about-section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">01</span>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      
-      <div class="about-content">
-        <div class="about-text">
-          <p class="about-intro">
-            Ambitious Computer Science graduate with international study experience and strong expertise 
-            in frontend and full‑stack development. Currently an ITI student in the 9-month program 
-            specializing in Open Source Applications Development track.
-          </p>
-          
-          <div class="education-block">
-            <h3 class="subsection-title">Education</h3>
-            <div class="education-item">
-              <h4>Information Technology Institute (ITI)</h4>
-              <p class="education-details">9-Month Program - Open Source Applications Development Track</p>
-              <p class="education-period">Current</p>
-            </div>
-            <div class="education-item">
-              <h4>South Valley University (SVU)</h4>
-              <p class="education-details">B.Sc. in Computer Science • GPA: 3.55/4.0</p>
-              <p class="education-period">Aug 2021 – Jun 2025</p>
-              <span class="badge">Ideal Student Award</span>
-            </div>
-            <div class="education-item">
-              <h4>University of Applied Sciences, Nysa, Poland</h4>
-              <p class="education-details">Exchange Scholarship • GPA: 5.0/5.0</p>
-              <p class="education-period">Feb 2024 – Jul 2024</p>
-            </div>
-          </div>
+<!-- ABOUT -->
+<section id="about" class="section-padding bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">About Me</h2>
 
-          <div class="experience-block">
-            <h3 class="subsection-title">Experience</h3>
-            
-            <div class="experience-item">
-              <div class="experience-header">
-                <h4>Software Developer</h4>
-                <span class="experience-period">May 2024 – Present</span>
-              </div>
-              <p class="experience-company">Al-Emteyaz Wa Al-Tatweer • Saudi Arabia (Remote)</p>
-              <p class="experience-description">Developed responsive React & Bootstrap components, integrated REST APIs with backend teams, and built accessible, localized interfaces for international users.</p>
-            </div>
-
-            <div class="experience-item">
-              <div class="experience-header">
-                <h4>Coach</h4>
-                <span class="experience-period">Jul. 2024 – Present</span>
-              </div>
-              <p class="experience-company">Coach Academy • Cairo, Egypt</p>
-              <p class="experience-description">Trained students in algorithms, operating systems, and automation. Mentored career readiness and best practices for aspiring software engineers.</p>
-            </div>
-
-            <div class="experience-item">
-              <div class="experience-header">
-                <h4>Problem-Solving Mentor</h4>
-                <span class="experience-period">Dec. 2022 – Feb. 2024</span>
-              </div>
-              <p class="experience-company">ACM ACPC SVU • Qena, Egypt</p>
-              <p class="experience-description">Mentored 500+ students in C++ and ICPC competitive programming contests. Served as Regional ECPC Finalist and coach for Girls programming contests.</p>
-            </div>
-
-          </div>
-
-          <button (click)="downloadCV()" class="btn btn-download">
-            <i class="fas fa-download"></i> Download CV
-          </button>
-        </div>
-
-        <div class="about-stats">
-          <div class="stat-card">
-            <h3 class="stat-number">500+</h3>
-            <p class="stat-label">Students Mentored</p>
-          </div>
-          <div class="stat-card">
-            <h3 class="stat-number">Top 100</h3>
-            <p class="stat-label">ICPC Ranking</p>
-          </div>
-          <div class="stat-card">
-            <h3 class="stat-number">3+</h3>
-            <p class="stat-label">Years Experience</p>
-          </div>
-          <div class="stat-card">
-            <h3 class="stat-number">Regional</h3>
-            <p class="stat-label">ECPC Finalist</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills-section" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">02</span>
-        <h2 class="section-title">Skills & Expertise</h2>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-item" style="animation-delay: 0ms">
-          <div class="skill-header">
-            <span class="skill-name">JavaScript/TypeScript</span>
-            <span class="skill-percentage">90%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 90%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 100ms">
-          <div class="skill-header">
-            <span class="skill-name">React & React Native</span>
-            <span class="skill-percentage">85%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 200ms">
-          <div class="skill-header">
-            <span class="skill-name">Node.js & Express</span>
-            <span class="skill-percentage">80%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 300ms">
-          <div class="skill-header">
-            <span class="skill-name">HTML5 & CSS3</span>
-            <span class="skill-percentage">95%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 95%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 400ms">
-          <div class="skill-header">
-            <span class="skill-name">.NET Core & C#</span>
-            <span class="skill-percentage">75%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 75%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 500ms">
-          <div class="skill-header">
-            <span class="skill-name">C++</span>
-            <span class="skill-percentage">85%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 600ms">
-          <div class="skill-header">
-            <span class="skill-name">Python</span>
-            <span class="skill-percentage">70%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 70%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 700ms">
-          <div class="skill-header">
-            <span class="skill-name">SQL & Database Design</span>
-            <span class="skill-percentage">80%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 800ms">
-          <div class="skill-header">
-            <span class="skill-name">Git & Version Control</span>
-            <span class="skill-percentage">85%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 900ms">
-          <div class="skill-header">
-            <span class="skill-name">REST APIs</span>
-            <span class="skill-percentage">85%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 85%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 1000ms">
-          <div class="skill-header">
-            <span class="skill-name">UI/UX Design (Figma)</span>
-            <span class="skill-percentage">75%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 75%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item" style="animation-delay: 1100ms">
-          <div class="skill-header">
-            <span class="skill-name">Problem Solving & Algorithms</span>
-            <span class="skill-percentage">90%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-bar" style="width: 90%"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tech-stack">
-        <h3 class="subsection-title">Technologies</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">TypeScript</span>
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">React Native</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">.NET Core</span>
-          <span class="tech-tag">C++</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">HTML5</span>
-          <span class="tech-tag">CSS3</span>
-          <span class="tech-tag">Bootstrap</span>
-          <span class="tech-tag">Git</span>
-          <span class="tech-tag">MySQL</span>
-          <span class="tech-tag">SQL Server</span>
-          <span class="tech-tag">REST APIs</span>
-          <span class="tech-tag">Figma</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="projects-section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">03</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
-
-      <div class="projects-grid">
-        <div class="project-card" style="animation-delay: 0ms">
-          <div class="project-number">01</div>
-          <h3 class="project-title">Feeding Frenzy Game</h3>
-          <p class="project-description">A fun arcade-style game built with JavaScript, HTML, and CSS. The player controls a fish that eats smaller fish to grow while avoiding larger ones.</p>
-          <div class="project-tags">
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">Game Development</span>
-          </div>
-          <a href="https://github.com/Shahd3711" class="project-link">
-            View Project <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="project-card" style="animation-delay: 150ms">
-          <div class="project-number">02</div>
-          <h3 class="project-title">E-Learning Platform</h3>
-          <p class="project-description">Full-stack e-learning platform for course management, assignments, and student progress tracking. Features include role-based access (Admin, Instructor, Student), secure authentication, and interactive dashboards. DEPI Graduation Project.</p>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">Express</span>
-            <span class="project-tag">MySQL</span>
-            <span class="project-tag">Full-Stack</span>
-          </div>
-          <a href="https://github.com/Shahd3711" class="project-link">
-            View Project <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="project-card" style="animation-delay: 300ms">
-          <div class="project-number">03</div>
-          <h3 class="project-title">Software Engineers Networking Website</h3>
-          <p class="project-description">LinkedIn-style platform dedicated to software engineers. Users can create professional profiles, share projects, follow peers, and explore job opportunities. Designed with a clean UI and optimized for developer networking. Graduation Project.</p>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">.NET</span>
-            <span class="project-tag">SQL Server</span>
-            <span class="project-tag">Social Network</span>
-          </div>
-          <a href="https://github.com/Shahd3711" class="project-link">
-            View Project <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="project-card" style="animation-delay: 450ms">
-          <div class="project-number">04</div>
-          <h3 class="project-title">Portfolio Website</h3>
-          <p class="project-description">A modern responsive portfolio showcasing my skills, experience, and projects. Built with Tailwind CSS and animated sections for smooth user experience.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">Tailwind</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">Responsive</span>
-          </div>
-          <a href="https://github.com/Shahd3711" class="project-link">
-            View Project <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <div class="project-card" style="animation-delay: 600ms">
-          <div class="project-number">05</div>
-          <h3 class="project-title">Task Manager App</h3>
-          <p class="project-description">A productivity app for creating, updating, and tracking tasks. Features include real-time sync, user authentication, and notifications.</p>
-          <div class="project-tags">
-            <span class="project-tag">React</span>
-            <span class="project-tag">Firebase</span>
-            <span class="project-tag">Real-time</span>
-            <span class="project-tag">Authentication</span>
-          </div>
-          <a href="https://github.com/Shahd3711" class="project-link">
-            View Project <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Achievements Section -->
-      <div class="achievements-section">
-        <h3 class="subsection-title">Achievements & Certifications</h3>
-        <div class="achievements-grid">
-          <div class="achievement-item">
-            <i class="fas fa-trophy"></i>
-            <p>Top 100 ICPC ECPC Qualifications (Peak: 33rd)</p>
-          </div>
-          <div class="achievement-item">
-            <i class="fas fa-medal"></i>
-            <p>Honorable Mention — ICPC Egyptian CPC Finals</p>
-          </div>
-          <div class="achievement-item">
-            <i class="fas fa-medal"></i>
-            <p>Honorable Mention — ICPC Africa Arab for Girls</p>
-          </div>
-          <div class="achievement-item">
-            <i class="fas fa-award"></i>
-            <p>145th Place — ICPC ACPC Kickoff Contest</p>
-          </div>
-          <div class="achievement-item">
-            <i class="fas fa-certificate"></i>
-            <p>Full Stack .NET Certification — DEPI Rwad</p>
-          </div>
-          <div class="achievement-item">
-            <i class="fas fa-language"></i>
-            <p>TOEFL & IELTS English Proficiency</p>
-          </div>
-          <div class="achievement-item">
-            <i class="fas fa-star"></i>
-            <p>Ideal Student Award — South Valley University</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section / Footer -->
-  <footer class="contact-section" id="contact">
-    <div class="container">
-      <div class="contact-content">
-        <div class="contact-text">
-          <h2 class="contact-title">Let's Work Together</h2>
-          <p class="contact-description">
-            I'm currently available for freelance work and full-time opportunities. 
-            If you have a project in mind or just want to chat, feel free to reach out!
-          </p>
-          <a href="mailto:shahd.mostafa3711@gmail.com" class="btn btn-contact">
-            <i class="fas fa-envelope"></i> shahd.mostafa3711@gmail.com
-          </a>
-        </div>
-
-        <div class="social-links">
-          <h3>Connect with me</h3>
-          <div class="social-icons">
-            <a href="https://github.com/Shahd3711" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/shahdmostafa-373b442a4" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:shahd.mostafa3711@gmail.com" class="social-link" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://www.facebook.com/shahd.mostafa3711" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Shahd Mostafa. All rights reserved.</p>
-        <p class="location">
-          <i class="fas fa-map-marker-alt"></i> Cairo, Egypt
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <p class="text-muted fs-5">
+          Ambitious Computer Science graduate with international study experience and strong expertise
+          in frontend and full-stack development. Currently ITI student in Open Source track.
         </p>
+
+        <h5 class="mt-4">Education</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent text-white">ITI – Open Source Track</li>
+          <li class="list-group-item bg-transparent text-white">SVU – Computer Science GPA 3.55</li>
+          <li class="list-group-item bg-transparent text-white">Nysa University – Poland Exchange</li>
+        </ul>
+
+        <button (click)="downloadCV()" class="btn btn-primary mt-4 rounded-pill px-4">
+          <i class="fas fa-download"></i> Download CV
+        </button>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card bg-black text-center p-4">
+          <h3 class="text-primary">500+</h3>
+          <p>Students Mentored</p>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-</div>
+<!-- SKILLS -->
+<section id="skills" class="section-padding">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <p>JavaScript / TypeScript</p>
+        <div class="progress skill-bar">
+          <div class="progress-bar bg-primary" style="width:90%"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <p>React</p>
+        <div class="progress skill-bar">
+          <div class="progress-bar bg-primary" style="width:85%"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <p>.NET</p>
+        <div class="progress skill-bar">
+          <div class="progress-bar bg-primary" style="width:80%"></div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <p>C++</p>
+        <div class="progress skill-bar">
+          <div class="progress-bar bg-primary" style="width:90%"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-padding bg-dark">
+  <div class="container">
+    <h2 class="text-center mb-5">Projects</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card bg-black p-4 project-card h-100">
+          <h5>Feeding Frenzy Game</h5>
+          <p class="text-muted">JavaScript arcade game</p>
+          <a href="#" class="text-primary">View Project →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-black p-4 project-card h-100">
+          <h5>E-Learning Platform</h5>
+          <p class="text-muted">Full stack system</p>
+          <a href="#" class="text-primary">View Project →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-black p-4 project-card h-100">
+          <h5>Networking Platform</h5>
+          <p class="text-muted">LinkedIn-style platform</p>
+          <a href="#" class="text-primary">View Project →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact" class="section-padding text-center">
+  <div class="container">
+    <h2>Let's Work Together</h2>
+    <p class="text-muted">Available for freelance & full-time opportunities</p>
+
+    <a href="mailto:shahd.mostafa3711@gmail.com" class="btn btn-primary rounded-pill px-4">
+      <i class="fas fa-envelope"></i> Email Me
+    </a>
+
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <a href="https://github.com/Shahd3711" class="btn btn-outline-primary social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com" class="btn btn-outline-primary social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://facebook.com" class="btn btn-outline-primary social-icon">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+
+    <p class="mt-4 text-muted">© 2026 Shahd Mostafa — Cairo, Egypt</p>
+  </div>
+</footer>
